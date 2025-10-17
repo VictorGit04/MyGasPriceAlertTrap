@@ -1,0 +1,18 @@
+ethereum_rpc = "https://rpc.hoodi.ethpandaops.io"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.my_gas_price_alert_trap]
+path = "out/MyGasPriceAlertTrap.sol/MyGasPriceAlertTrap.json"
+response_contract = "0xAfDFAC2185e6a68ac2E77646C3dddd60F39CaEE1"
+response_function = "respondCallback(uint256)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = ["0x97848cf252Dc104aEa5809E7cc2F07B29F42017e"]
+address = "0x5f96b10234a424217bFEDB8d8d343d20C0e71493"
